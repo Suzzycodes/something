@@ -1,0 +1,65 @@
+
+a:link, a:visited {
+    background-color: rgb(82, 36, 51);
+    color: beige;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    margin: 14px;
+    display: inline-block;
+    
+}
+
+a:hover {
+    background-color: blue;
+    text-decoration: underline;
+}
+
+/* This is styling for ordered and unordered lists */
+ol {
+    background-color: aqua;
+    padding: 20px;
+}
+
+ul {
+    background-color: blueviolet;
+    padding: 20px;
+}
+ol li {
+    background-color: rgb(129, 190, 166);
+    padding: 7px;
+    margin-left: 25px;
+}
+ul li {
+    background-color: rgb(83, 72, 75);
+    padding: 7px;
+    margin-left: 25px;
+    color: beige;
+}
+table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 30%;
+}
+td,thead{
+    border: 2px solid rgb(22, 17, 8);
+    text-align: left;
+    padding: 8px;
+}
+thead {
+    background-color: brown;
+    color: beige;
+
+}
+
+tr:nth-child(even){
+    background-color: rgb(133, 112, 112);
+    color: white;
+
+}
+
+p{
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: red;
+}

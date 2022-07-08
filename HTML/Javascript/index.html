@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript 101</title>
+
+    <script src="main.js"></script>
+</head>
+<body>
+    <h1>Starting Javascript</h1>
+
+    <p id="start"> We are waiting</p>
+
+    <button type="button" onclick="changeFunction()">Start</button>
+
+<p id="end"> We are about to end</p>
+
+<p id="full_details"></p>
+    <button type="button" onclick="endFunction()">End</button>
+
+    
+<script>
+    //javascript objects
+
+    var firstname = "Susan"
+    var lastname = "Ogidan"
+    var age = 20
+    var fullname = firstname + " " + lastname
+
+    console.log("My name is" + " "+ fullname)
+
+    // document.getElementById("start").innerHTML = "My name is " + fullname + " and I am " + age + "years old."
+    
+    var myDetails = {
+        firstname: "Susan",
+        lastname: "Ogidan",
+        age: 21,
+        fullname: function(){
+            return this.firstname + " " + this.lastname
+        }
+     }
+
+     console.log("My first name is " + myDetails.firstname)
+     console.log("My full name is " + myDetails.fullname())
+
+     var fullDetails = {
+        bioDetails : {
+            firstname: "Susan",
+        lastname: "Ogidan",
+        age: 21,
+        fullname: function(){
+            return this.firstname + " " + this.lastname
+        }
+        },
+
+        edu: {
+            primary: "Sweet Nursery and pry school",
+            secondary: "Baby Secondary school"
+        }
+        
+     }
+
+console.log()
+
+document.getElementById("full_details").innerHTML = `My name is ${fullDetails.bioDetails.fullname()}`
+
+
+
+
+</script>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
